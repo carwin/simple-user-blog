@@ -94,16 +94,5 @@ function simple_user_blog_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: view disqus comments.
-  $permissions['view disqus comments'] = array(
-    'name' => 'view disqus comments',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'anonymous user',
-      2 => 'authenticated user',
-    ),
-    'module' => 'disqus',
-  );
-
   return $permissions;
 }
