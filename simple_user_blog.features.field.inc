@@ -159,84 +159,6 @@ function simple_user_blog_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-blog_post-field_header_image_ref'.
-  $fields['node-blog_post-field_header_image_ref'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_header_image_ref',
-      'foreign keys' => array(
-        'nid' => array(
-          'columns' => array(
-            'nid' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'nid' => array(
-          0 => 'nid',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'node_reference',
-      'settings' => array(
-        'referenceable_types' => array(
-          'article' => 0,
-          'block_content' => 0,
-          'blog_post' => 0,
-          'header_image' => 'header_image',
-          'home_slideshow_item' => 0,
-          'page' => 0,
-          'webform' => 0,
-        ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => '',
-          'view_name' => '',
-        ),
-      ),
-      'translatable' => '0',
-      'type' => 'node_reference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'blog_post',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '2',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_header_image_ref',
-      'label' => 'Header Image',
-      'required' => 1,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '1',
-      ),
-    ),
-  );
-
   // Exported field: 'user-user-field_bio'.
   $fields['user-user-field_bio'] = array(
     'field_config' => array(
@@ -369,7 +291,6 @@ function simple_user_blog_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Bio');
   t('Body');
-  t('Header Image');
   t('Name');
   t('Optionally, enter tags separated by a comma to categorize this blog post.<br />
 <b>Example:</b> <code>fashion, cuisine, movies</code>');
